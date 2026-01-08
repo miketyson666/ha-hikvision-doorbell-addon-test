@@ -1,0 +1,22 @@
+name: Hikvision Doorbell
+description: Two-way audio for Hikvision doorbells with WebRTC
+version: "1.0.0"
+slug: hikvision-doorbell
+url: https://github.com/acardace/ha-hikvision-doorbell-addon
+arch:
+  - amd64
+  - aarch64
+  - armv7
+host_network: true
+map:
+  - config:rw
+options:
+  doorbell_host: ""
+  doorbell_username: "admin"
+  doorbell_password: ""
+  server_port: 8080
+schema:
+  doorbell_host: str
+  doorbell_username: str
+  doorbell_password: password
+  server_port: port

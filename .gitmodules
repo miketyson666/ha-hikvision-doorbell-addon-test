@@ -1,0 +1,6 @@
+[submodule "hikvision-doorbell/integration"]
+	path = hikvision-doorbell/integration
+	url = https://github.com/acardace/hikvision-doorbell-integration.git
+[submodule "hikvision-doorbell/card"]
+	path = hikvision-doorbell/card
+	url = https://github.com/acardace/hikvision-doorbell-card.git
