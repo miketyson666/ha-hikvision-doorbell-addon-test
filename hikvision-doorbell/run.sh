@@ -32,9 +32,9 @@ hikvision:
 EOF
 
 # Install integration to Home Assistant config (includes bundled card)
-bashio::log.info "Installing Hikvision Doorbell integration..."
-mkdir -p /config/custom_components
-cp -r /custom_components/hikvision_doorbell /config/custom_components/
+#bashio::log.info "Installing Hikvision Doorbell integration..."
+#mkdir -p /config/custom_components
+#cp -r /custom_components/hikvision_doorbell /config/custom_components/
 
 bashio::log.info "Starting Hikvision Doorbell server on port ${SERVER_PORT}..."
 exec /usr/bin/doorbell-server -config /data/config.yaml
