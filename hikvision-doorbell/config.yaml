@@ -1,8 +1,8 @@
-name: Hikvision Doorbell
-description: Two-way audio for Hikvision doorbells with WebRTC
+name: Hikvision Doorbell Test
+description: Two-way audio for Hikvision doorbells with WebRTC Test version
 version: "1.0.0"
-slug: hikvision-doorbell
-url: https://github.com/acardace/ha-hikvision-doorbell-addon
+slug: hikvision-doorbell-test
+url: https://github.com/miketyson666/ha-hikvision-doorbell-addon
 arch:
   - amd64
   - aarch64
