@@ -9,7 +9,7 @@ WORKDIR /build
 RUN apk add --no-cache git
 
 # Clone the doorbell server repository
-RUN git clone --depth 1 https://github.com/miketyson666/ha-hikvision-doorbell-addon-test/tree/main/hikvision-doorbell.git .
+RUN git clone --depth 1 https://github.com/acardace/hikvision-doorbell-server.git .
 
 # Download dependencies
 RUN go mod download
