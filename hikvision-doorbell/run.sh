@@ -5,7 +5,7 @@ DOORBELL_HOST=$(bashio::config 'doorbell_host')
 DOORBELL_USERNAME=$(bashio::config 'doorbell_username')
 DOORBELL_PASSWORD=$(bashio::config 'doorbell_password')
 SERVER_PORT=$(bashio::config 'server_port')
-WEBRTC_PUBLIC_IP=128.116.167.40
+
 
 # Validate required options
 if [ -z "$DOORBELL_HOST" ]; then
