@@ -9,7 +9,7 @@ WORKDIR /build
 RUN apk add --no-cache git
 
 # Clone the doorbell server repository
-RUN git clone --depth 1 https://github.com/acardace/hikvision-doorbell-server.git .
+RUN git clone --depth 1 https://github.com/miketyson666/hikvision-doorbell-server.git .
 
 # Download dependencies
 RUN go mod download
@@ -27,11 +27,11 @@ RUN apk add --no-cache jq ffmpeg
 COPY --from=builder /build/doorbell-server /usr/bin/doorbell-server
 
 # Copy integration (custom_components)
-COPY integration/custom_components /custom_components
+#COPY integration/custom_components /custom_components
 
 # Copy card JS into integration's www folder for auto-registration
-RUN mkdir -p /custom_components/hikvision_doorbell/www
-COPY card/hikvision-doorbell-card.js /custom_components/hikvision_doorbell/www/
+#RUN mkdir -p /custom_components/hikvision_doorbell/www
+#COPY card/hikvision-doorbell-card.js /custom_components/hikvision_doorbell/www/
 
 # Copy run script
 COPY run.sh /run.sh
